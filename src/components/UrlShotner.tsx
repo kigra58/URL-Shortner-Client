@@ -3,7 +3,7 @@ import Axios from "axios";
 import QRModel from "./QRModel";
 
 const API_URL = "http://localhost:3021/url/create";
-const BASE_URL = "http://localhost:3021/url/";
+// const BASE_URL = "http://localhost:3021/url/";
 const myURL = "http://localhost:3021/url/";
 
 const UrlShotner: React.FC = () => {
@@ -36,9 +36,9 @@ const UrlShotner: React.FC = () => {
   };
 
   const visitHandler = () => {
-    Axios.get(BASE_URL.concat(field.shortId)).then(() => {
-      window.open(myURL.concat(field.shortId));
-    });
+    // Axios.get(BASE_URL.concat(field.shortId)).then(() => {
+      // });
+    window.open(myURL.concat(field.shortId));
   };
 
   return (
