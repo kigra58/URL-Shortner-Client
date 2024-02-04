@@ -81,7 +81,7 @@ const UrlShotner: React.FC = () => {
             </button>
 
             {/* COPY URL  */}
-            {field && field.shortId != "" && (
+            {field && field.shortId !== "" && (
               <i
                 className="bi bi-clipboard fs-4 mx-3"
                 style={{ cursor: "pointer" }}
